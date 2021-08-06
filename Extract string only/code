@@ -1,0 +1,11 @@
+Function ExtractAlpha(rC As Range) As String
+
+With CreateObject("VBSCRIPT.REGEXP")
+    .Pattern = "[^a-z]"
+    .Global = True
+    .IgnoreCase = True
+    ExtractAlpha = .Replace(rC.Value, "")
+End With
+End Function
+
+#https://www.extendoffice.com/documents/excel/1625-excel-extract-text-from-alphanumeric-string.html
