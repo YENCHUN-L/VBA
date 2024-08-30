@@ -70,11 +70,7 @@ Sub ZipWithPasswordAndSendEmail()
     
     ' Send the original email
     olMail.Send
-    
-    ' Delete all files in the temp folder
-    'Set fso = CreateObject("Scripting.FileSystemObject")
-    'fso.DeleteFile strFilePath & "*.*", True
-    
+
     ' Delete all files in the temp folder
     Kill strFilePath & "*.*"
 
