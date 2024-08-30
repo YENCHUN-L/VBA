@@ -29,7 +29,7 @@ Sub ZipWithPasswordAndSendEmail()
     
     ' Define the path for saving attachments and the zip file
     strFilePath = "C:\Temp\Attachments\"
-    strZipPath = "C:\Temp\Attachments.zip"
+    strZipPath = "C:\Temp\Attachments\Attachments.zip"
     
     ' Create the folder if it doesn't exist
     If Dir(strFilePath, vbDirectory) = "" Then
@@ -72,9 +72,12 @@ Sub ZipWithPasswordAndSendEmail()
     olMail.Send
     
     ' Delete all files in the temp folder
-    Set fso = CreateObject("Scripting.FileSystemObject")
-    fso.DeleteFile strFilePath & "*.*", True
+    'Set fso = CreateObject("Scripting.FileSystemObject")
+    'fso.DeleteFile strFilePath & "*.*", True
     
+    ' Delete all files in the temp folder
+    Kill strFilePath & "*.*"
+
     ' Clean up
     Set olAttachment = Nothing
     Set olMail = Nothing
