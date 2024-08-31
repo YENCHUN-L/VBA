@@ -1,4 +1,4 @@
-# This macro will compress Outlook attachments with passwords and send the email.
+**This macro will compress Outlook attachments with passwords and send the email.**
 1. Check if there are any attachments, if not send email directly.
 
 2. If there are any attachments, will replace the attachments as compress winzip
