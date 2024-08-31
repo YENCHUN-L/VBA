@@ -3,9 +3,10 @@
 ## This macro will compress Outlook attachments with passwords and send the email.
 1. Check if there are any attachments, if not send email directly.
 
-2. If there are any attachments, will replace the attachments as compress winzip
-  with 8 digit password(at least one capital letter, one non-capital letter, one number, one punctutation)
-  , and last sending out the email.
+2. If there are any attachments
+   1. Will replace the attachments as compress winzip with 8 digit password(at least one capital letter, one non-capital letter, one number, one punctutation).
+   2. Send a password mail to yourself.
+   3. Sending out the email.
 
 
 ## To add this macro to Outlook follow these steps
