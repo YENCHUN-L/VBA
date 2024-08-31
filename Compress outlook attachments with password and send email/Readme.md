@@ -14,8 +14,8 @@
   Open Outlook -> File -> Options -> Customize Ribbon -> Activate Developer Tab
 
 2. Add macro to Outlook <br />
-  Developer Tab -> Visual Basic -> import ZipWithPasswordAndSendEmail.bas file
-  or
+  Developer Tab -> Visual Basic -> import ZipWithPasswordAndSendEmail.bas file  <br />
+  or  <br />
   Developer Tab -> Visual Basic -> insert module -> copy paste the code to the module
 
 3. You will find the macro at <br />
