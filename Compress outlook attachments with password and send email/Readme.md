@@ -6,7 +6,7 @@
 2. If there are any attachments
    1. Will replace the attachments as compress winzip with 8 digit password(at least one capital letter, one non-capital letter, one number, one punctutation).
    2. Send a password mail to yourself.
-   3. Sending out the email.
+   3. Send the email.
 
 
 ## To add this macro to Outlook follow these steps
