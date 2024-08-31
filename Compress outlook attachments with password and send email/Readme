@@ -8,6 +8,7 @@ Developer Tab -> Visual Basic -> import ZipWithPasswordAndSendEmail.bas file
 or
 Developer Tab -> Visual Basic -> insert module -> copy paste the code to the module
 
-Start sending compress Outlook attachments with passwords!!!
-You will find the macro at
+3. You will find the macro at
 Devloper Tab -> Macros -> ZipWithPasswordAndSendEmail
+
+Start sending compress Outlook attachments with passwords!!!
