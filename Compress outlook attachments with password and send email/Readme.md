@@ -20,5 +20,6 @@
 
 3. You will find the macro at <br />
   Devloper Tab -> Macros -> ZipWithPasswordAndSendEmail
-
+<br />
+<br />
 **Start sending compress Outlook attachments with passwords!!!**
