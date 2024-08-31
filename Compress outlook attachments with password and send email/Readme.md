@@ -4,7 +4,7 @@
 > This macro does not send out the password to the recipient!! <br />
 > Choose a channel that you think is safe to pass on the password to the recipient.
 
-## This macro will compress Outlook attachments with passwords and send the email.
+## This macro will will perform the following
 1. Check if there are any attachments, if not send email directly.
 
 2. If there are any attachments
