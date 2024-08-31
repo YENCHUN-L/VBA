@@ -1,5 +1,5 @@
 
-# Auto send compress outlook attachments with password
+# Auto send compress Outlook attachments with password
 ## This macro will compress Outlook attachments with passwords and send the email.
 1. Check if there are any attachments, if not send email directly.
 
