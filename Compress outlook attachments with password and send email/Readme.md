@@ -10,15 +10,15 @@
 
 
 ## To add this macro to Outlook follow these steps
-1. Activate Developer Tab
+1. Activate Developer Tab <br />
   Open Outlook -> File -> Options -> Customize Ribbon -> Activate Developer Tab
 
-2. Add macro to Outlook
+2. Add macro to Outlook <br />
   Developer Tab -> Visual Basic -> import ZipWithPasswordAndSendEmail.bas file
   or
   Developer Tab -> Visual Basic -> insert module -> copy paste the code to the module
 
-3. You will find the macro at
+3. You will find the macro at <br />
   Devloper Tab -> Macros -> ZipWithPasswordAndSendEmail
 
 Start sending compress Outlook attachments with passwords!!!
