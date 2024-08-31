@@ -1,6 +1,6 @@
-##Auto Send compress outlook attachments with password
+## Auto Send compress outlook attachments with password
 
-###This macro will compress Outlook attachments with passwords and send the email.
+### This macro will compress Outlook attachments with passwords and send the email.
 1. Check if there are any attachments, if not send email directly.
 
 2. If there are any attachments, will replace the attachments as compress winzip
@@ -8,7 +8,7 @@
   , and last sending out the email.
 
 
-###To add this macro to Outlook follow these steps
+### To add this macro to Outlook follow these steps
 1. Activate Developer Tab
   Open Outlook -> File -> Options -> Customize Ribbon -> Activate Developer Tab
 
