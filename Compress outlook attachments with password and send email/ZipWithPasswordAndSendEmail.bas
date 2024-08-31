@@ -70,7 +70,11 @@ Sub ZipWithPasswordAndSendEmail()
     
     ' Send the original email
     olMail.Send
-
+    
+    ' Delete all files in the temp folder
+    'Set fso = CreateObject("Scripting.FileSystemObject")
+    'fso.DeleteFile strFilePath & "*.*", True
+    
     ' Delete all files in the temp folder
     Kill strFilePath & "*.*"
 
@@ -88,17 +92,46 @@ Sub ZipWithPasswordAndSendEmail()
 ErrorHandler:
     MsgBox "An error occurred: " & Err.Description
 End Sub
-
 Function GeneratePassword(length As Integer) As String
     Dim chars As String
     Dim i As Integer
     Dim password As String
+    Dim randIndex As Integer
+    Dim requiredChars As String
     
-    chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"
-    Randomize
-    For i = 1 To length
-        password = password & Mid(chars, Int((Len(chars) * Rnd) + 1), 1)
+    ' Character sets
+    Dim capital As String
+    Dim nonCapital As String
+    Dim number As String
+    Dim punctuation As String
+    
+    capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    nonCapital = "abcdefghijklmnopqrstuvwxyz"
+    number = "0123456789"
+    punctuation = "!@#$%^&*()"
+    
+    ' Ensure the password contains at least one of each required character type
+    requiredChars = Mid(capital, Int((Len(capital) * Rnd) + 1), 1)
+    requiredChars = requiredChars & Mid(nonCapital, Int((Len(nonCapital) * Rnd) + 1), 1)
+    requiredChars = requiredChars & Mid(number, Int((Len(number) * Rnd) + 1), 1)
+    requiredChars = requiredChars & Mid(punctuation, Int((Len(punctuation) * Rnd) + 1), 1)
+    
+    ' Combine all character sets
+    chars = capital & nonCapital & number & punctuation
+    
+    ' Randomly fill the rest of the password
+    For i = 1 To (length - 4)
+        randIndex = Int((Len(chars) * Rnd) + 1)
+        password = password & Mid(chars, randIndex, 1)
     Next i
+    
+    ' Add the required characters to the password
+    password = password & requiredChars
+    
+    ' Shuffle the password to ensure randomness
+    password = StrConv(password, vbUnicode)
+    password = StrConv(password, vbFromUnicode)
+    
     GeneratePassword = password
 End Function
 
